@@ -37,5 +37,5 @@ public class Seminar1_2 {
             }
             return sum;
         }
-    }
+}
 
