@@ -17,7 +17,7 @@ public class Seminar1_6 {
 
     public static boolean checkArray(int[][] arr) {
         int rows = arr.length;
-        if (rows ==0){
+        if (rows == 0){
             return  true;
         }
         for (int i = 1; i < rows; i++){
