@@ -15,11 +15,10 @@ public class Seminar1_0 {
 
     }
 
-    public  static int checkArrayLenght(int[] arr, int minLenght){
-        if (arr.length < minLenght){
+    public static int checkArrayLenght(int[] arr, int minLenght) {
+        if (arr.length < minLenght) {
             return -1;
-        }
-        else {
+        } else {
             return arr.length;
         }
     }
