@@ -15,16 +15,17 @@ public class Seminar1_4 {
     public static void main(String[] args) {
         Integer[] arr = {1, 4, 2, 5, 3};
         List<Integer> nullElement = checkArray(arr);
-        if (nullElement.size() > 0){
+        if (nullElement.size() > 0) {
             System.out.println("Массив содержит пустые элементы на позициях" + nullElement);
-        }else {
+        } else {
             System.out.println("Массив не содержит пустых значений");
         }
     }
-    public static List<Integer> checkArray(Integer[] arr){
+
+    public static List<Integer> checkArray(Integer[] arr) {
         List<Integer> nullElement = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] ==null){
+            if (arr[i] == null) {
                 nullElement.add(i);
             }
         }

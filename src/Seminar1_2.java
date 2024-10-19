@@ -9,16 +9,16 @@
 
 public class Seminar1_2 {
     public static void main(String[] args) {
-        int[][] matrix = {{1, 0, 1},{1, 1, 1},{0, 0, 1}};
+        int[][] matrix = {{1, 0, 1}, {1, 1, 1}, {0, 0, 1}};
         int sum = sumElement(matrix);
         System.out.println(sum);
 
     }
 
-    public  static int sumElement(int[][] matrix) {
+    public static int sumElement(int[][] matrix) {
         int n = matrix.length;
         for (int[] row : matrix) {
-            if (row.length != n){
+            if (row.length != n) {
                 throw new RuntimeException("Количество сторок не равно количеству столбцов");
             }
         }
@@ -29,13 +29,13 @@ public class Seminar1_2 {
                 }
             }
         }
-            int sum =0;
-            for (int[] row : matrix) {
-                for (int element : row) {
-                    sum += element;
-                }
+        int sum = 0;
+        for (int[] row : matrix) {
+            for (int element : row) {
+                sum += element;
             }
-            return sum;
         }
+        return sum;
+    }
 }
 

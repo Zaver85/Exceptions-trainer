@@ -17,30 +17,27 @@ public class Seminar1_1 {
         int[] arr = null;
         int element = 3;
         int result = serchElement(arr, element);
-        if(result == -1){
+        if (result == -1) {
             System.out.println("Длина массива меньше 3");
-        }
-        else if (result == -2){
+        } else if (result == -2) {
             System.out.println("Искомый элемент не найден");
-        }
-        else if (result == -3) {
+        } else if (result == -3) {
             System.out.println("Массив не передан");
-        }
-        else {
+        } else {
             System.out.printf("искомый элемент имеет индекс %d", result);
         }
     }
 
-    public static int serchElement(int[] arr, int element){
-        if (arr == null){
+    public static int serchElement(int[] arr, int element) {
+        if (arr == null) {
             return -3;
         }
         int minLenght = 3;
-        if (arr.length < minLenght){
+        if (arr.length < minLenght) {
             return -1;
         }
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == element){
+            if (arr[i] == element) {
                 return i;
             }
         }

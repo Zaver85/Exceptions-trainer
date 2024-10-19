@@ -14,23 +14,22 @@
 
 public class Seminar1_3 {
     public static void main(String[] args) {
-        int[][] matrix = {{1, 0, 1},{1, 1, 1},{0, 0, 1}};
+        int[][] matrix = {{1, 0, 1}, {1, 1, 1}, {0, 0, 1}};
         int result = sumElement(matrix);
-        if (result == -1){
+        if (result == -1) {
             System.out.println("Количество сторок не равно количеству столбцов");
         } else if (result == -2) {
             System.out.println("Массив должен содержать только 0 или 1");
-        }
-        else {
+        } else {
             System.out.printf("Сумма элементов %d", result);
         }
 
     }
 
-    public  static int sumElement(int[][] matrix) {
+    public static int sumElement(int[][] matrix) {
         int n = matrix.length;
         for (int[] row : matrix) {
-            if (row.length != n){
+            if (row.length != n) {
                 return -1;
             }
         }
@@ -41,7 +40,7 @@ public class Seminar1_3 {
                 }
             }
         }
-        int sum =0;
+        int sum = 0;
         for (int[] row : matrix) {
             for (int element : row) {
                 sum += element;
